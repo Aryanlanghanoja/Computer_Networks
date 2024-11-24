@@ -1,0 +1,19 @@
+BGP :
+- Define Autonomous System
+- router bgp 10
+- bgp router-id 1.1.1.1
+- neighbor 12.0.0.1 remote-as 30 
+- network 10.0.0.0 mask 255.0.0.0
+- network 12.0.0.0 mask 255.0.0.0
+- router bgp 20
+- bgp router-id 2.2.2.2
+- neighbor 13.0.0.1 remote-as 30 
+- network 11.0.0.0 mask 255.0.0.0
+- network 13.0.0.0 mask 255.0.0.0
+- router bgp 30
+- bgp router-id 3.3.3.3
+- neighbor 12.0.0.1 remote-as 10 
+- neighbor 13.0.0.1 remote-as 20 
+
+show ip bgp neighbor
+show ip bgp summary	
